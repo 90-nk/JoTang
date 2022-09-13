@@ -1,2 +1,1 @@
-# if-you-try-to-join-jotang
-something needed to join in jotang
+#1 啥是git
