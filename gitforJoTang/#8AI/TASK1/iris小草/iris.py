@@ -10,13 +10,15 @@ import matplotlib.pyplot as plt
 #获得神奇的iris数据集
 dataset = datasets.load_iris()
 #善用print功能,观察数据集的特点哦,它分为data和target两个部分,属性和种类分别是用哪些数据表示的呢?想清楚之后就可以继续往下啦!
+print(dataset.keys())
+print
 #完善代码:寻找一个合适的函数按照二八比例划分测试集和数据集数据
 input, x_test, label, y_test = ?
 #完善代码:利用pytorch把数据张量化,
 input = torch.FloatTensor(input)
 label = torch.LongTensor(label)
-x_test = ?
-y_test = ?
+x_test = torch.FloatTensor(x_test)
+y_test = torch.FloatTensor(y_test)
 
 label_size = int(np.array(label.size()))
 
