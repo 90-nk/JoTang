@@ -18,7 +18,7 @@
 ##### 4.sklearn
 ### 开始学习摸索代码内容（其实该标题写于4.sklearn之前）
 ##### 1.了解python基本语法，基本结构
-*“大部分学习内容来自焦糖招新上的超链接《零基础入门学习Pyhton》”* 
+*“大部分学习内容来自焦糖招新上的超链接[《零基础入门学习Pyhton》](https://www.bilibili.com/video/BV1Fs411A7HZ?from=search&seid=5546307367831972217)”* 
 > 一些与C语言的比较基本的区别：
 >  
 ①语句的结束不使用“；”，而是使用回车换行  
@@ -58,3 +58,25 @@ xxxx.keys()
 print(dataset['data'])
 > 打印dataset里面'data’键内的全部内容。（只是学习过程中的了解过程，真实运行代码时不是必要的一步）
 ##### 3.“#完善代码：寻找合适的函数”
+X_train,X_test, y_train, y_test =sklearn.model_selection.train_test_split(train_data,train_target,test_size=0.2, random_state=0,stratify=y_train)  
+> sklearn.model_selection.train_test_split  
+> 等效于代码开头的*from sklearn.model_selection import train_test_split*
+
+> test_size=0.2  
+> 样本占比（测试集占比？）  
+
+> random_state  
+> 随机数的种子，可以通过控制后面的数字来保证使用同一组随机数
+
+*不理解为什么老是报错说变量名未定义*
+
+**解决了，是因为python中的变量需要需要通过赋值来定义，但这些没有定义**
+
+##### 4.“#利用pytorch把数据张量化”
+xxxx = torch.FloatTensor(xxxx)
+> torch.FloatTensor  
+> 利用torch package将数据进行张量化  
+> FloatTensor表明是浮点类张量
+> LongTensor表明是长张量（64位整型）
+
+##### 5.“#”
